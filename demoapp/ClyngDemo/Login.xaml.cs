@@ -23,9 +23,9 @@ namespace ClyngDemo
 
             CMClient.Init(new Dictionary<String, Object>()
                               {
-                                  { CMClient.CmCustomerKey, AppSettings.Get(CMClient.CmCustomerKey, "pk-1ec9c74d-8c2b-4687-9b5d-5e9e431f2b88") },
-                                  { CMClient.CmRgServerUrl, AppSettings.Get(CMClient.CmRgServerUrl, "https://gotest.clyng.com") },  
-                                  { CMClient.CmUserId, AppSettings.Get(CMClient.CmUserId, "misha")},
+                                  { CMClient.CmCustomerKey, AppSettings.Get(CMClient.CmCustomerKey, "your private apiKey here") },
+                                  { CMClient.CmRgServerUrl, AppSettings.Get(CMClient.CmRgServerUrl, "https://go.clyng.com") },  
+                                  { CMClient.CmUserId, AppSettings.Get(CMClient.CmUserId, "mr@smith.com")},
                                   { CMClient.CmUseGpsLocation, true}
                               });
             ClyngMobile.CMClientListener clientListener = new CMClientListenerImpl();
